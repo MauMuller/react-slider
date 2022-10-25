@@ -1,5 +1,5 @@
 node_modules/
-src/
+src/main.jsx
 .gitignore
 index.html
 vite.config.js
