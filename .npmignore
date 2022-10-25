@@ -1,4 +1,5 @@
 node_modules/
+src/App.jsx
 src/main.jsx
 .gitignore
 index.html

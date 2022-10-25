@@ -32,7 +32,7 @@ const Slider = ({
 
   const generatingAnException = () =>
     console.error(
-      `É preciso colocar itens dentro do slider, por favor verifique a lista:\n\n- buttonsJSX,\n- itemsJSX\n\nSe quiser, veja a documentação no link: \n...`
+      `É preciso colocar itens dentro do slider, por favor verifique a lista:\n\n- buttonsJSX,\n- itemsJSX\n\nSe quiser, veja a documentação no link: \nhttps://maumuller.github.io/react_slider/\n`
     );
 
   if (itemsJSX.length === 0 || left === undefined || right === undefined) {

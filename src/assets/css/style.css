@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  /* background-color: #4644bd; */
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+.titleComponent {
+  font-weight: 800;
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.268);
+}
+
+.ilustration {
+  /* border: 1px solid red; */
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  width: 100%;
+}
+
+.buttonSlider {
+  border-radius: 6rem;
+  width: 3rem;
+  position: relative;
+  min-width: 3rem;
+  max-width: 4rem;
+  border: 1px solid transparent;
+  z-index: 20;
+  box-shadow: 0.3rem 0.3rem 0.4rem #adabab;
+  cursor: pointer;
+  background-color: #fff;
+  user-select: none;
+}
+
+.buttonSlider img {
+  width: 100%;
+  height: 100%;
+  -webkit-user-drag: none;
+}

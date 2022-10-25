@@ -1,1 +1,1 @@
-# react_slider
+# React Slider
