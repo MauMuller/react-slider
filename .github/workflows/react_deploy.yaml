@@ -20,8 +20,8 @@ jobs:
       - name: Check out your repository using git
         uses: actions/checkout@v2
 
-      - name: Use Node.js 16
-        uses: actions/setup-node@v2
+      - name: Use Node
+        uses: actions/setup-node@v1
         with:
           node-version: "16"
           cache: "npm"
@@ -31,21 +31,29 @@ jobs:
         run: npm ci
 
       # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
-      - name: Build React
-        run: npm run build --if-present
+      - name: Build Project
+        run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./dist
 
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    name: Deploy
     needs: build
+    runs-on: ubunto-latest
+    if: github.ref === 'refs/heads/main'
+
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+      - name: Donwload Artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: prodution-files
+          path: ./dist
+
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
