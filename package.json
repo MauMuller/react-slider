@@ -4,7 +4,7 @@
   "type": "module",
   "description": "Slider para React",
   "homepage": "https://maumuller.github.io/react_slider/",
-  "main": "./dist/assets/main.js",
+  "main": "./src/modules/slider/main.jsx",
   "license": "ISC",
   "scripts": {
     "dev": "vite",
