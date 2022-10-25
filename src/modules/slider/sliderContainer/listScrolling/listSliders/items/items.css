@@ -1,0 +1,14 @@
+.itemSlider {
+  /* border: 1px solid green; */
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.itemSlider img {
+  box-shadow: 0.3rem 0.3rem 0.4rem #242424;
+  height: 100%;
+  width: 30rem;
+  border-radius: 5rem;
+  -webkit-user-drag: none;
+  user-select: none;
+}
