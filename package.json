@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "description": "Slider para React",
-  "homepage": "https://MauMuller.github.io/react_slider/index.html",
+  "homepage": "https://MauMuller.github.io/react_slider/",
   "main": "./dist/assets/main.js",
   "license": "ISC",
   "scripts": {
