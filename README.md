@@ -21,9 +21,9 @@ Uma biblioteca feita em React, com a ideia de facilitar a vida do programador, u
 
 ### Menu de contéudos
 
-- [Sobre](#sobre)
-- [Instalação](#instalação)
-- [Como usar](#como-usar)
+- [Sobre](#sobre-👀)
+- [Instalação](#instalação-📥)
+- [Como usar](#como-usar-🤔)
   - [Pré-Requisitos](#pré-requisitos)
   - [Utilização do Slider](#utilização-do-slider)
   - [ButtonsVisibility](#buttonsvisibility)
@@ -35,11 +35,11 @@ Uma biblioteca feita em React, com a ideia de facilitar a vida do programador, u
   - [ButtonsJSX](#buttonsjsx)
   - [ItemsJSX](#itemsjsx-essencial)
   - [TimeLapseDuration](#timelapseduration)
-- [Componentes Padrões](#componentes-padrões)
-- [Mensagens de Erro](#mensagens-de-erro)
-- [Ilustrações](#ilustrações)
-- [Tecnologias](#tecnologias)
-- [Autor](#autor)
+- [Componentes Padrões](#componentes-padrões-🥼)
+- [Mensagens de Erro](#mensagens-de-erro-❌)
+- [Ilustrações](#ilustrações-👓)
+- [Tecnologias](#técnologias-🔨)
+- [Autor](#autor-🎭)
 
 ---
 
@@ -444,27 +444,15 @@ Aqui você pode ver de forma prática como que o slider vem para você e um cami
 
 ---
 
-## Técnologias
+## Técnologias 🔨
 
-<div>
   <img height="35" style="vertical-align: text-bottom;" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="Javascript"/>
-  <b>Javacript</b>
-</div>
 
-<div>
   <img height="35" style="vertical-align: text-bottom;" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="react"/>
-  <b>React</b>
-</div>
 
-<div>
   <img height="35" style="vertical-align: text-bottom;" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="html"/>
-  <b>HTML</b>
-</div>
 
-<div>
   <img height="35" style="vertical-align: text-bottom;" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" alt="css"/>
-  <b>CSS</b>
-</div>
 
 ---
 
