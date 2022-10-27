@@ -8,7 +8,7 @@ import "./listSliders.css";
 const ListSliders = ({
   itemsJSX,
   settingValueToMoveCounter,
-  itemsGrabbingCursor,
+  itemsGrabbingCursorVisibility,
 }) => {
   const [mouseIsDown, setMouseIsDown] = useState(false);
   const [touchStart, setTouchStart] = useState(0);
@@ -58,16 +58,18 @@ const ListSliders = ({
       onTouchStart={(evt) => settingTouchStart(evt.touches[0].clientX)}
       onTouchMove={(evt) => isTouchStarted(evt)}
       onAnimationEnd={removingEffects}>
-      {itemsJSX.map((component, componentInd) => {
-        return (
-          <Items
-            component={component}
-            mouseIsDown={mouseIsDown}
-            key={componentInd}
-            itemsGrabbingCursor={itemsGrabbingCursor}
-          />
-        );
-      })}
+      {itemsJSX != undefined
+        ? itemsJSX.map((component, componentInd) => {
+            return (
+              <Items
+                component={component}
+                mouseIsDown={mouseIsDown}
+                key={componentInd}
+                itemsGrabbingCursorVisibility={itemsGrabbingCursorVisibility}
+              />
+            );
+          })
+        : null}
     </ul>
   );
 };

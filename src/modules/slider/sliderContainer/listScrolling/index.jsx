@@ -9,7 +9,11 @@ import { gettingRightObjectPostion } from "../../../../assets/js/gettingRightObj
 
 import "./listScrolling.css";
 
-const ListScrolling = ({ itemsJSX, itemsGrabbingCursor, circleVisibility }) => {
+const ListScrolling = ({
+  itemsJSX,
+  itemsGrabbingCursorVisibility,
+  circleVisibility,
+}) => {
   const objGlobal = useContext(GlobalSlider);
   const { listScrolling, listSliders } = objGlobal.objListReferences;
   const [moveCounterSlider, setmoveCounterSlider] = objGlobal.arrCounter;
@@ -35,7 +39,7 @@ const ListScrolling = ({ itemsJSX, itemsGrabbingCursor, circleVisibility }) => {
     <div className="listScrolling" ref={listScrolling}>
       <ListSliders
         itemsJSX={itemsJSX}
-        itemsGrabbingCursor={itemsGrabbingCursor}
+        itemsGrabbingCursorVisibility={itemsGrabbingCursorVisibility}
         settingValueToMoveCounter={settingValueToMoveCounter}
       />
       {circleVisibility ? (

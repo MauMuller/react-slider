@@ -23,7 +23,7 @@ const SliderContainer = ({
   buttonsJSX,
   sliderClasses,
   itemsJSX,
-  itemsGrabbingCursor,
+  itemsGrabbingCursorVisibility,
   circleVisibility,
   timelapseVisibility,
   timeLapseDuration,
@@ -119,7 +119,7 @@ const SliderContainer = ({
       {isButtonVisibilityTrue("buttonLeft", left)}
       <ListScrolling
         itemsJSX={itemsJSX}
-        itemsGrabbingCursor={itemsGrabbingCursor}
+        itemsGrabbingCursorVisibility={itemsGrabbingCursorVisibility}
         circleVisibility={circleVisibility}
       />
       {isButtonVisibilityTrue("buttonRight", right)}

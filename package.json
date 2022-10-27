@@ -1,11 +1,11 @@
 {
   "name": "@mauriciomds/react-slider",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
-  "description": "Slider para React",
+  "description": "React Slider - You are on control",
   "homepage": "https://maumuller.github.io/maUs_OpenSource/pages/leftbar_menu.html",
   "main": "./src/modules/slider/index.jsx",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/MauMuller/react-slider",
   "scripts": {
     "dev": "vite",
