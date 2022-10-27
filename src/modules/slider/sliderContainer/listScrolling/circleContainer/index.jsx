@@ -5,14 +5,15 @@ import { Circle } from "./circle/";
 const styleCircleContainer = {
   display: "flex",
   flexDirection: "columm",
-  gap: "1rem",
+  gap: "0.3rem",
   justifyContent: "center",
   alignItems: "center",
   width: "100%",
-  listStyle: "none"
+  listStyle: "none",
+  // border: "1px solid red",
 };
 
-const CircleContainer = () => {
+const CircleContainer = ({ circlesVisibility, circlesClasses }) => {
   const objGlobal = useContext(GlobalSlider);
   const { objListReferences } = objGlobal;
   const { listSliders } = objListReferences;
@@ -23,19 +24,22 @@ const CircleContainer = () => {
     const gettingCircle = [];
 
     for (let i = 0; i < lengthOfItems.length; i++) {
-      gettingCircle.push(<Circle key={i} />);
+      gettingCircle.push(<Circle key={i} circlesClasses={circlesClasses} />);
     }
 
     setCircleArray(gettingCircle);
   }, []);
 
   return (
-    <ul
-      style={styleCircleContainer}
-      title={`Existem ${circleArr.length} itens`}
-    >
-      {circleArr.length <= 0 ? null : circleArr}
-    </ul>
+    <>
+      {circlesVisibility ? (
+        <ul
+          style={styleCircleContainer}
+          title={`Existem ${circleArr.length} itens`}>
+          {circleArr.length <= 0 ? null : circleArr}
+        </ul>
+      ) : null}
+    </>
   );
 };
 

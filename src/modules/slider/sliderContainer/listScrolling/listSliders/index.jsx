@@ -3,7 +3,6 @@ import { useState, useContext } from "react";
 import { GlobalSlider } from "../../../../../context/GlobalSlider";
 import { Items } from "./items";
 import { removingOldStyle } from "../../../../../assets/js/removingOldStyle";
-import "./listSliders.css";
 
 const ListSliders = ({
   itemsJSX,

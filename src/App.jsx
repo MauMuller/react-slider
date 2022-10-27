@@ -1,5 +1,4 @@
 import "./assets/css/style.css";
-import "./assets/css/responsive.css";
 
 import { Slider } from "./modules/slider";
 import { ArrowLeft, ArrowRight } from "phosphor-react";
@@ -44,24 +43,7 @@ const App = () => {
     <>
       <main className="App">
         <section className="ilustration">
-          <Slider
-            // buttonsVisibility={true} //Visibilidade dos botões.
-            // circleVisibility={true} //Visibilidade dos circulos para mostrar a quantidade de itens dentro do slider.
-            // timelapseVisibility={true} //Passagem de itens de acordo com um tempo específico.
-            // itemsGrabbingCursorVisibility={true} //Mouse Grab acima dos itens.
-            // buttonsClasses={["buttonSlider"]} //Classes para os Botões.
-            sliderClasses={["slider"]} //Classes para os Botões.
-            // circlesClasses={0}
-            // buttonsJSX={{
-            //   //JSX itens para colocar dentro do botão, pode ser um icone, imagem ou qualquer JSX.
-            //   left: ComponentButton("left"),
-            //   right: ComponentButton("right"),
-            // }}
-            // buttonsJSX={[]}
-            // itemsJSX={""}
-            // itemsJSX={arrayOfComponents([banner_1, banner_2, banner_3, banner_4])} //Itens em JSX para dentro do slider.
-            // timeLapseDuration={1} //Em segundos EX: 1, 2, 3.
-          />
+          <Slider />
         </section>
       </main>
     </>

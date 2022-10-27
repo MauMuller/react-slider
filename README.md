@@ -29,12 +29,15 @@ Uma biblioteca feita em React, com a ideia de facilitar a vida do programador, u
   - [ButtonsVisibility](#buttonsvisibility)
   - [CircleVisibility](#circlevisibility)
   - [TimelapseVisibility](#timelapsevisibility)
-  - [ItemsGrabbingCursor](#itemsgrabbingcursor)
+  - [itemsGrabbingCursorVisibility](#itemsGrabbingCursorVisibility)
   - [ButtonsClasses](#buttonsclasses)
   - [SliderClasses](#sliderclasses)
   - [ButtonsJSX](#buttonsjsx)
   - [ItemsJSX](#itemsjsx-essencial)
   - [TimeLapseDuration](#timelapseduration)
+- [Componentes Padrões](#componentes-padrões)
+- [Mensagens de Erro](#mensagens-de-erro)
+- [Ilustrações](#ilustrações)
 - [Tecnologias](#tecnologias)
 - [Autor](#autor)
 
@@ -107,7 +110,7 @@ Para começar, precisaremos separar a utlização em em subtópicos para ficar m
   - ButtonsVisibility
   - CircleVisibility
   - TimelapseVisibility
-  - ItemsGrabbingCursor
+  - itemsGrabbingCursorVisibility
   - ButtonsClasses
   - SliderClasses
   - ButtonsJSX
@@ -174,7 +177,7 @@ Ele habilita ou desabilita a visibilidade e utilização dos botões nas laterai
   export default App;
 ```
 
-#### CircleVisibility
+#### CirclesVisibility
 
 Ele habilita ou desabilita a visibilidade dos circulos abaixo do slider para mostrar a quantidade de itens.
 
@@ -193,7 +196,7 @@ Ele habilita ou desabilita a visibilidade dos circulos abaixo do slider para mos
   function App () {
     return <>
       <Slider
-        circleVisibility={true}
+        circlesVisibility={true}
       />
     </>
   }
@@ -228,7 +231,7 @@ Ele habilita ou desabilita a funcionalidade de transição a cada periodo de tem
   export default App;
 ```
 
-#### ItemsGrabbingCursor
+#### ItemsGrabbingCursorVisibility
 
 Ele habilita ou desabilita a utilização do cursor _grab_ acima dos itens dentro do Slider.
 
@@ -247,7 +250,7 @@ Ele habilita ou desabilita a utilização do cursor _grab_ acima dos itens dentr
   function App () {
     return <>
       <Slider
-        itemsGrabbingCursor={true}
+        itemsGrabbingCursorVisibility={true}
       />
     </>
   }
@@ -308,6 +311,10 @@ Insere todas as classes que no slider para estilização. Sendo cada uma das cla
 
   export default App;
 ```
+
+**Observação**: por padrão, o slider vem com uma classe relacionada a largura, a classe `.slider`, nela existe a propriedade `width: 100%`.
+
+Caso deseje trocar a largura do slider, é necessário adicionar a palavra chave `!important` depois do width, para assim, sobrescrever a largura padrão.
 
 #### ButtonsJSX
 
@@ -394,6 +401,46 @@ Essa funcionalidade determina quantos segundos deve demorar para executar a tran
 
   export default App;
 ```
+
+---
+
+## Componentes Padrões 🥼
+
+A padronização padrão é algo que já vem incluso nesse componente, ainda mais para saber como ficaria "as coisas" caso não houvesse nenhum item dentro do slider.
+
+Por conta disso, quando algum valor é inserido (ou não inserido) incorretamente nas propriedades com o final "JSX", o próprio Slider fará o trabalho de gerar componentes de exemplo para ilustrar como deveria ficar.
+
+Todas propriedades possuem algum valor padrão, porém porém as únicas que geram valores em JSX são: **itemsJSX e buttonsJSX**.
+
+---
+
+## Mensagens de Erro ❌
+
+Toda vez que algum valor inserido (ou não inserido) nas propriedades não for esperado pelo componente, ocorre algo chamado "Funcionamento Continuo", ou seja, o funcionamento do sistema ao todo continua normalmente, porém, outros valores são automaticamente inseridos no lugar do inválido.
+
+Esses valores inseridos são os `Valores Padrões` das propriedades citados na sessão de **[Utilização do Slider](#utilização-do-slider)**, com excessão aos terminados em `JSX`, ou seja, o `itemsJSX` e `buttonsJSX`.
+
+Esses dois em específico recebem componentes no lugar de seus valores padrões, esses componentes podem ser vistos na sessão de **[Ilustrações](#ilustrações)**.
+
+Além disso, é importante sempre ficar de olho no console, qualquer valor que não for inserido corretamente será apontado com uma mensagem de erro, informando a `key` e o `valor` incorreto.
+
+#### Exemplo
+
+![Mensagem de Erro](https://user-images.githubusercontent.com/82516932/198368875-26c12dc5-43d1-4365-86b9-5ceffca072c4.png)
+
+---
+
+## Ilustrações 👓
+
+Aqui você pode ver de forma prática como que o slider vem para você e um caminho de como é possível personalizar praticamente tudo e adequar o mesmo de acordo com o site.
+
+- Sem nenhuma estilização e valores padrões:
+
+![sliderDefaultIlustration](https://user-images.githubusercontent.com/82516932/198363504-334c4ebc-e061-4ecc-9518-2efb3ac161dc.png)
+
+- Com JSX de imagens e estilos:
+
+![sliderStyledIlustration](https://user-images.githubusercontent.com/82516932/198365805-217328fa-8c34-4845-99a8-e6dc4919b816.png)
 
 ---
 

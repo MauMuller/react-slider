@@ -1,5 +1,3 @@
-import "./items.css";
-
 const Items = ({ component, mouseIsDown, itemsGrabbingCursorVisibility }) => {
   let cursorChange = itemsGrabbingCursorVisibility
     ? { cursor: `${mouseIsDown ? "grabbing" : "grab"}` }

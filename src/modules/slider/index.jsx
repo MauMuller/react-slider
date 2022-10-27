@@ -4,6 +4,9 @@ import { SquaresExemple } from "../../exemples/squaresExemple";
 import { ArrowExemple } from "../../exemples/arrowExemple";
 import { verifingErrorProps } from "../../assets/js/verifingErrorProps";
 
+import "../../assets/css/slider.css";
+import "../../assets/css/responsive.css";
+
 const arrayExempleComponents = (numberOfArrays) => {
   const arrExemple = [];
   for (let i = 0; i < numberOfArrays; i++) {
@@ -20,7 +23,7 @@ const buttonsObject = {
 const gettingAllprops = ({
   buttonsVisibility = true,
   itemsGrabbingCursorVisibility = true,
-  circleVisibility = true,
+  circlesVisibility = true,
   timelapseVisibility = false,
 
   buttonsClasses = [""],
@@ -28,25 +31,25 @@ const gettingAllprops = ({
   sliderClasses = [""],
   itemsClasses = [""],
 
+  itemsJSX = [],
   buttonsJSX = {
     left: undefined,
     right: undefined,
   },
-  itemsJSX = [],
 
   timeLapseDuration = 2,
 }) => {
   return {
     buttonsVisibility,
+    itemsGrabbingCursorVisibility,
+    circlesVisibility,
+    timelapseVisibility,
     buttonsClasses,
-    buttonsJSX,
     circlesClasses,
     sliderClasses,
-    itemsJSX,
     itemsClasses,
-    itemsGrabbingCursorVisibility,
-    circleVisibility,
-    timelapseVisibility,
+    itemsJSX,
+    buttonsJSX,
     timeLapseDuration,
   };
 };
@@ -54,7 +57,7 @@ const gettingAllprops = ({
 const Slider = (props) => {
   const generationAnError = (valuesAndKeys) =>
     console.error(
-      `As propriedades:\n\n${valuesAndKeys}\nPossuem valores incorretos, verifique a documentação com o link abaixo:\nhttps://github.com/MauMuller/react-slider`
+      `As propriedades:\n\n${valuesAndKeys}\nPossuem valores incorretos, verifique a documentação com o link abaixo:\nhttps://github.com/MauMuller/react-slider\n\n`
     );
 
   const allProps = gettingAllprops(props);
@@ -77,15 +80,16 @@ const Slider = (props) => {
     <>
       <GlobalSliderProvider>
         <SliderContainer
+          circlesVisibility={allProps.circlesVisibility}
+          timelapseVisibility={allProps.timelapseVisibility}
+          itemsGrabbingCursorVisibility={allProps.itemsGrabbingCursorVisibility}
           buttonsVisibility={allProps.buttonsVisibility}
-          buttonsClasses={allProps.buttonsClasses}
           buttonsJSX={allProps.buttonsJSX}
-          sliderClasses={allProps.sliderClasses}
           itemsJSX={allProps.itemsJSX}
           itemsClasses={allProps.itemsClasses}
-          itemsGrabbingCursorVisibility={allProps.itemsGrabbingCursorVisibility}
-          circleVisibility={allProps.circleVisibility}
-          timelapseVisibility={allProps.timelapseVisibility}
+          sliderClasses={allProps.sliderClasses}
+          buttonsClasses={allProps.buttonsClasses}
+          circlesClasses={allProps.circlesClasses}
           timeLapseDuration={allProps.timeLapseDuration}
         />
       </GlobalSliderProvider>
