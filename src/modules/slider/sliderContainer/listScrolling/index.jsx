@@ -7,9 +7,12 @@ import { increasingCounter } from "../../../../assets/js/increasingCounter";
 import { decreasingCounter } from "../../../../assets/js/decreasingCounter";
 import { gettingRightObjectPostion } from "../../../../assets/js/gettingRightObjectPostion";
 
-import "./listScrolling.css";
-
-const ListScrolling = ({ itemsJSX, itemsGrabbingCursor, circleVisibility }) => {
+const ListScrolling = ({
+  itemsJSX,
+  itemsGrabbingCursorVisibility,
+  circlesVisibility,
+  circlesClasses,
+}) => {
   const objGlobal = useContext(GlobalSlider);
   const { listScrolling, listSliders } = objGlobal.objListReferences;
   const [moveCounterSlider, setmoveCounterSlider] = objGlobal.arrCounter;
@@ -35,11 +38,14 @@ const ListScrolling = ({ itemsJSX, itemsGrabbingCursor, circleVisibility }) => {
     <div className="listScrolling" ref={listScrolling}>
       <ListSliders
         itemsJSX={itemsJSX}
-        itemsGrabbingCursor={itemsGrabbingCursor}
+        itemsGrabbingCursorVisibility={itemsGrabbingCursorVisibility}
         settingValueToMoveCounter={settingValueToMoveCounter}
       />
-      {circleVisibility ? (
-        <CircleContainer circleVisibility={circleVisibility} />
+      {circlesVisibility ? (
+        <CircleContainer
+          circlesVisibility={circlesVisibility}
+          circlesClasses={circlesClasses}
+        />
       ) : null}
     </div>
   );

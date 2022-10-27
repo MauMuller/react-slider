@@ -1,7 +1,13 @@
+.gitignore
+.github
+
 node_modules/
+
+src/assets/css/style.css
+src/assets/imgs
+
 src/App.jsx
 src/main.jsx
-.gitignore
+
 index.html
 vite.config.js
-.github

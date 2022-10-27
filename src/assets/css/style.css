@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #bd4444;
+  /* background-color: #fff; */
   /* background-color: #4644bd; */
 }
 
@@ -21,7 +22,6 @@ body {
 }
 
 .ilustration {
-  /* border: 1px solid red; */
   flex-direction: column;
   align-items: center;
   padding: 1rem;
@@ -29,14 +29,16 @@ body {
   justify-content: center;
 }
 
-.slider {
-  width: 100%;
+/* COLOCANDO ESTILOS NOS COMPONENTES */
+
+.sliderImportant {
+  /* width: 20rem !important; */
 }
 
 .buttonSlider {
-  border-radius: 6rem;
-  width: 3rem;
   position: relative;
+  width: 3rem;
+  border-radius: 6rem;
   min-width: 3rem;
   max-width: 4rem;
   border: 1px solid transparent;
@@ -51,4 +53,8 @@ body {
   width: 100%;
   height: 100%;
   -webkit-user-drag: none;
+}
+
+.circles {
+  background-color: #fff;
 }

@@ -18,14 +18,18 @@ let objMove = {
   zeroValue;
 
 const SliderContainer = ({
-  buttonsVisibility,
-  buttonsClasses,
-  buttonsJSX,
-  sliderClasses,
-  itemsJSX,
-  itemsGrabbingCursor,
-  circleVisibility,
+  circlesVisibility,
   timelapseVisibility,
+  buttonsVisibility,
+  itemsGrabbingCursorVisibility,
+
+  buttonsClasses,
+  sliderClasses,
+  circlesClasses,
+
+  buttonsJSX,
+  itemsJSX,
+
   timeLapseDuration,
 }) => {
   const objGlobal = useContext(GlobalSlider);
@@ -115,12 +119,13 @@ const SliderContainer = ({
   };
 
   return (
-    <div className={sliderClasses.join("")} style={divStyle}>
+    <div className={`slider ${sliderClasses.join("")}`} style={divStyle}>
       {isButtonVisibilityTrue("buttonLeft", left)}
       <ListScrolling
         itemsJSX={itemsJSX}
-        itemsGrabbingCursor={itemsGrabbingCursor}
-        circleVisibility={circleVisibility}
+        itemsGrabbingCursorVisibility={itemsGrabbingCursorVisibility}
+        circlesVisibility={circlesVisibility}
+        circlesClasses={circlesClasses}
       />
       {isButtonVisibilityTrue("buttonRight", right)}
     </div>

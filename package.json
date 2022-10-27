@@ -1,11 +1,18 @@
 {
   "name": "@mauriciomds/react-slider",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "type": "module",
-  "description": "Slider para React",
+  "keywords": [
+    "react-lib",
+    "react",
+    "component",
+    "slider",
+    "biblioteca"
+  ],
+  "description": "React Slider - Feito para se adaptar ao seus site",
   "homepage": "https://maumuller.github.io/maUs_OpenSource/pages/leftbar_menu.html",
   "main": "./src/modules/slider/index.jsx",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/MauMuller/react-slider",
   "scripts": {
     "dev": "vite",
@@ -17,9 +24,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.1.0",
-    "vite": "^3.1.0"
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "vite": "^3.2.0"
   }
 }
