@@ -1,14 +1,16 @@
 # React Slider ✨
 
-<img src="https://img.shields.io/github/package-json/v/maumuller/react-slider/main?color=000&label=vers%C3%A3o&logo=000&logoColor=000&style=for-the-badge">
+  <a href="https://maumuller.github.io/maUs_OpenSource/pages/leftbar_menu.html">
+    <img src="https://img.shields.io/static/v1?label=Site&message=MausOpenSource&color=e3071d&style=for-the-badge">
+  </a>
 
-<a href="https://maumuller.github.io/maUs_OpenSource/pages/leftbar_menu.html">
-  <img src="https://img.shields.io/static/v1?label=Site&message=MausOpenSource&color=e3071d&style=for-the-badge">
-</a>
+<div>
+  <img src="https://img.shields.io/github/package-json/v/maumuller/react-slider/main?color=000&label=vers%C3%A3o&logo=000&logoColor=000&style=for-the-badge">
 
-<a href="https://github.com/MauMuller/">
-  <img src="https://img.shields.io/static/v1?label=Feito Por&message=maumuller&color=3307e3&style=for-the-badge">
-</a>
+  <a href="https://github.com/MauMuller/">
+    <img src="https://img.shields.io/static/v1?label=Feito Por&message=maumuller&color=3307e3&style=for-the-badge">
+  </a>
+</div>
 
 Uma biblioteca feita em React, com a ideia de facilitar a vida do programador, utilizando apenas um componente para possuir todas as funcionalidades de um slider.
 
