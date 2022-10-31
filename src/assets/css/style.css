@@ -58,3 +58,11 @@ body {
 .circles {
   background-color: #fff;
 }
+
+.slider {
+  border: 1px solid red;
+}
+
+.itensSlider {
+  border: 1px solid blue;
+}

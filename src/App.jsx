@@ -1,7 +1,6 @@
 import "./assets/css/style.css";
 
 import { Slider } from "./modules/slider";
-import { ArrowLeft, ArrowRight } from "phosphor-react";
 
 import arrowLeft from "./assets/imgs/arrows/arrowLeft.svg";
 import arrowRight from "./assets/imgs/arrows/arrowRight.svg";
@@ -15,18 +14,9 @@ const ComponentToSlider = ({ srcImg, alt, className }) => {
   return <img src={srcImg} alt={alt} className={className} />;
 };
 
-const ComponentButton = (arrow) => {
-  return arrow === "left" ? (
-    <ArrowLeft size={32} color="#0f0f0f" />
-  ) : (
-    <ArrowRight size={32} color="#0f0f0f" />
-  );
-
-  // return (
-  //   <img src={arrow} style={{ MozWindowDragging: "none" }} alt={"arrow"} />
-  // );
-};
-
+const ComponentButton = (arrow) => (
+  <img src={arrow} style={{ MozWindowDragging: "none" }} alt={"arrow"} />
+);
 const arrayOfComponents = (array) => {
   return array.map((srcImg, indSrc) => (
     <ComponentToSlider
@@ -43,7 +33,27 @@ const App = () => {
     <>
       <main className="App">
         <section className="ilustration">
-          <Slider />
+          <Slider
+            buttonsVisibility={true}
+            circlesVisibility={true}
+            timelapseVisibility={true}
+            itemsGrabbingCursorVisibility={true}
+            buttonsClasses={["buttonSlider"]}
+            sliderClasses={["slider"]}
+            itemsClasses={["itensSlider"]}
+            circlesClasses={["circles"]}
+            itemsJSX={arrayOfComponents([
+              banner_1,
+              banner_2,
+              banner_3,
+              banner_4,
+            ])}
+            buttonsJSX={{
+              left: ComponentButton(arrowLeft),
+              right: ComponentButton(arrowRight),
+            }}
+            timeLapseDuration={2} //Sempre em segundos
+          />
         </section>
       </main>
     </>
