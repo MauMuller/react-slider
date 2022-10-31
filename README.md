@@ -12,6 +12,8 @@
   </a>
 </div>
 
+<br/>
+
 Uma biblioteca feita em React, com a ideia de facilitar a vida do programador, utilizando apenas um componente para possuir todas as funcionalidades de um slider.
 
 ---
