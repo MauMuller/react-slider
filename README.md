@@ -21,19 +21,28 @@ Uma biblioteca feita em React, com a ideia de facilitar a vida do programador, u
 - [Sobre](#sobre)
 - [Instalação](#instalação)
 - [Como usar](#como-usar)
+
   - [Pré-Requisitos](#pré-requisitos)
   - [Utilização do Slider](#utilização-do-slider)
-  - [Propriedades](#propriedades)
-  - [Definições](#definições)
-  - [ButtonsVisibility](#buttonsvisibility)
-  - [CircleVisibility](#circlevisibility)
-  - [TimelapseVisibility](#timelapsevisibility)
-  - [itemsGrabbingCursorVisibility](#itemsGrabbingCursorVisibility)
-  - [ButtonsClasses](#buttonsclasses)
-  - [SliderClasses](#sliderclasses)
-  - [ButtonsJSX](#buttonsjsx)
-  - [ItemsJSX](#itemsjsx-essencial)
-  - [TimeLapseDuration](#timelapseduration)
+
+    - [Propriedades](#propriedades)
+    - [Definições](#definições)
+
+      - [ButtonsVisibility](#buttonsvisibility)
+      - [CircleVisibility](#circlevisibility)
+      - [TimelapseVisibility](#timelapsevisibility)
+      - [itemsGrabbingCursorVisibility](#itemsGrabbingCursorVisibility)
+
+      - [ButtonsClasses](#buttonsclasses)
+      - [SliderClasses](#sliderclasses)
+      - [ItemsClasses](#itemsclasses)
+      - [CirclesClasses](#circlesclasses)
+
+      - [ButtonsJSX](#buttonsjsx)
+      - [ItemsJSX](#itemsjsx-essencial)
+
+      - [TimeLapseDuration](#timelapseduration)
+
 - [Componentes Padrões](#componentes-padrões)
 - [Mensagens de Erro](#mensagens-de-erro)
 - [Ilustrações](#ilustrações)
@@ -167,6 +176,8 @@ A partir dessas propriedades podemos modificar o slider e todos os itens de dent
 
         buttonsClasses={[]}
         sliderClasses={[]}
+        itemsClasses={[]}
+        circlesClasses={[]}
 
         itemsJSX={[]}
         buttonsJSX={{
@@ -254,6 +265,28 @@ Abaixo, teremos todas as definições de cada propriedade com sua descrição e 
   **Observação**: por padrão, o slider vem com uma classe relacionada a largura, a classe `.slider`, nela existe a propriedade `width: 100%`.
 
   Caso deseje trocar a largura do slider, é necessário adicionar a palavra chave `!important` depois do width, para assim, sobrescrever a largura padrão.
+
+- ##### ItemsClasses
+
+  Insere todas as classes nos itens dos Slider. Sendo cada uma das classes passada separadamente dentro do array.
+
+  **Valores que podem ser passados:**
+
+  - _[ ]_: Vazio;
+  - _[ "exemploItens", "exemploItens" ]_: Com classes;
+
+  `Valor padrão (quando não informado): []`
+
+- ##### CirclesClasses
+
+  Insere todas as classes nos circulos. Sendo cada uma das classes passada separadamente dentro do array.
+
+  **Valores que podem ser passados:**
+
+  - _[ ]_: Vazio;
+  - _[ "exemploCircles", "exemploCircles" ]_: Com classes;
+
+  `Valor padrão (quando não informado): []`
 
 - ##### ButtonsJSX
 
