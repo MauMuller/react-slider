@@ -8,6 +8,7 @@ const ListSliders = ({
   itemsJSX,
   settingValueToMoveCounter,
   itemsGrabbingCursorVisibility,
+  itemsClasses,
 }) => {
   const [mouseIsDown, setMouseIsDown] = useState(false);
   const [touchStart, setTouchStart] = useState(0);
@@ -65,6 +66,7 @@ const ListSliders = ({
                 mouseIsDown={mouseIsDown}
                 key={componentInd}
                 itemsGrabbingCursorVisibility={itemsGrabbingCursorVisibility}
+                itemsClasses={itemsClasses}
               />
             );
           })

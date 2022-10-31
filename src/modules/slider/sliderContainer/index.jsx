@@ -26,6 +26,7 @@ const SliderContainer = ({
   buttonsClasses,
   sliderClasses,
   circlesClasses,
+  itemsClasses,
 
   buttonsJSX,
   itemsJSX,
@@ -126,6 +127,7 @@ const SliderContainer = ({
         itemsGrabbingCursorVisibility={itemsGrabbingCursorVisibility}
         circlesVisibility={circlesVisibility}
         circlesClasses={circlesClasses}
+        itemsClasses={itemsClasses}
       />
       {isButtonVisibilityTrue("buttonRight", right)}
     </div>

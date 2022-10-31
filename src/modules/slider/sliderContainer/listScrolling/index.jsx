@@ -12,6 +12,7 @@ const ListScrolling = ({
   itemsGrabbingCursorVisibility,
   circlesVisibility,
   circlesClasses,
+  itemsClasses,
 }) => {
   const objGlobal = useContext(GlobalSlider);
   const { listScrolling, listSliders } = objGlobal.objListReferences;
@@ -40,6 +41,7 @@ const ListScrolling = ({
         itemsJSX={itemsJSX}
         itemsGrabbingCursorVisibility={itemsGrabbingCursorVisibility}
         settingValueToMoveCounter={settingValueToMoveCounter}
+        itemsClasses={itemsClasses}
       />
       {circlesVisibility ? (
         <CircleContainer
