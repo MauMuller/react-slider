@@ -2,8 +2,6 @@
 
 <img src="https://img.shields.io/github/package-json/v/maumuller/react-slider/main?color=000&label=vers%C3%A3o&logo=000&logoColor=000&style=for-the-badge">
 
-<img src="https://img.shields.io/github/license/maumuller/react-slider?label=Licença&color=e3dc07&style=for-the-badge">
-
 <a href="https://maumuller.github.io/maUs_OpenSource/pages/leftbar_menu.html">
   <img src="https://img.shields.io/static/v1?label=Site&message=MausOpenSource&color=e3071d&style=for-the-badge">
 </a>
@@ -11,9 +9,6 @@
 <a href="https://github.com/MauMuller/">
   <img src="https://img.shields.io/static/v1?label=Feito Por&message=maumuller&color=3307e3&style=for-the-badge">
 </a>
-
-<br />
-<br />
 
 Uma biblioteca feita em React, com a ideia de facilitar a vida do programador, utilizando apenas um componente para possuir todas as funcionalidades de um slider.
 
@@ -26,6 +21,8 @@ Uma biblioteca feita em React, com a ideia de facilitar a vida do programador, u
 - [Como usar](#como-usar)
   - [Pré-Requisitos](#pré-requisitos)
   - [Utilização do Slider](#utilização-do-slider)
+  - [Propriedades](#propriedades)
+  - [Definições](#definições)
   - [ButtonsVisibility](#buttonsvisibility)
   - [CircleVisibility](#circlevisibility)
   - [TimelapseVisibility](#timelapsevisibility)
@@ -138,9 +135,8 @@ Basicamente, funciona igual importar qualquer tipo de componente comum.
   import { Slider } from "@mauriciomds/react-slider"
 
   function App () {
-    return <>
+    return
       <Slider />
-    </>
   }
 
   export default App;
@@ -155,12 +151,12 @@ A diferença será relativo as propriedades que virão a seguir, ela servem para
 A partir dessas propriedades podemos modificar o slider e todos os itens de dentro da maneira que quisermos, o template completo do slider com seus `valores padrões` ficaria assim:
 
 ```JS
-  //App.jsx or Main.jsx
+  //App.jsx
   import React from "react";
   import { Slider } from "@mauriciomds/react-slider"
 
   function App () {
-    return <>
+    return
       <Slider
         buttonsVisibility={true}
         circlesVisibility={true}
@@ -178,13 +174,12 @@ A partir dessas propriedades podemos modificar o slider e todos os itens de dent
 
         timeLapseDuration={2} //Sempre em segundos
       />
-    </>
   }
 
   export default App;
 ```
 
-#### Definições de cada
+#### Definições
 
 Abaixo, teremos todas as definições de cada propriedade com sua descrição e funcionamento.
 
