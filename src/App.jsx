@@ -39,8 +39,8 @@ const App = () => {
             timelapseVisibility={true}
             itemsGrabbingCursorVisibility={true}
             buttonsClasses={["buttonSlider"]}
-            sliderClasses={["slider"]}
-            itemsClasses={["itensSlider"]}
+            sliderClasses={[""]}
+            itemsClasses={[""]}
             circlesClasses={["circles"]}
             itemsJSX={arrayOfComponents([
               banner_1,
